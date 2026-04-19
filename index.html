@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Мультимедійний словник</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>
+        Національний університет "Київський авіаційний інститут"
+      </h1>
+      <h2>
+        Кафедра комп'ютерних мультимедійних технологій
+      </h2>
+    </header>
+    <main class="content">
+    <div class="container">
+      <section id="alphabet-screen" class="screen">
+        <h1>Словник мультимедіа</h1>
+        <p>Оберіть категорію</p>
+        <div class="grid-alphabet" id="alphabet"></div>
+      </section>
+
+      <section id="terms-screen" class="screen hidden">
+        <button onclick="showScreen('alphabet-screen')" class="btn-back">
+          ← Назад до алфавіту
+        </button>
+        <h2 id="current-letter">А</h2>
+        <div class="grid-terms" id="terms-list"></div>
+      </section>
+
+      <section id="definition-screen" class="screen hidden">
+        <button onclick="showScreen('terms-screen')" class="btn-back">
+          ← Назад до списку
+        </button>
+        <div class="definition-card">
+          <h2 id="term-title">Термін</h2>
+          <hr />
+          <p id="term-desc">Опис терміну...</p>
+        </div>
+      </section>
+    </main>
+    </div>
+
+  
+
+  <footer class="footer">
+    <p>Керівник: М. А. Мелешко; Автор: ; Верстальниця: І. М. Андрієнко.
+    </p>
+
+  </footer>
+  <script src="script.js"></script>
+  </body>
+</html>
